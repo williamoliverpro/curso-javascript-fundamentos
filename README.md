@@ -1,1 +1,1 @@
-Código refatorado do exercício do canal Programador a Bordo
+Código refatorado do exercício do curso Javascript Fundamentos.
