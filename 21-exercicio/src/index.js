@@ -7,8 +7,6 @@
 
 import UserPage from './pages/User';
 
-var app = document.querySelector('#app');
+const app = document.querySelector('#app');
 
-UserPage(function(html) {
-  app.innerHTML = html;
-})
+UserPage(html => app.innerHTML = html)

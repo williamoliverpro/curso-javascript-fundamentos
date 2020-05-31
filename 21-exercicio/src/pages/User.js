@@ -12,13 +12,13 @@ import * as usersService from '../services/users';
 */
 
 export default function UserPage(fnCallback) {
-  usersService.getAllUsers(function(data) {
+  usersService.getAllUsers(data => {
     var userListHTML = UserList(data);
-    var userPageHTML = '<div id="page-userlist" class="container">' +
-      '<h1 class="mt-4">Admin de usuários</h1>' +
-      '<hr>' +
-      userListHTML +
-    '</div>'
+    var userPageHTML = `<div id="page-userlist" class="container">
+      <h1 class="mt-4">Admin de usuários</h1>
+      <hr>
+      ${userListHTML}
+    </div>`
     return fnCallback(userPageHTML);
   })
 };
